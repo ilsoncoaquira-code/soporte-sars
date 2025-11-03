@@ -1,0 +1,11 @@
+# Archivos y carpetas que no deben subirse al repositorio
+vendor/
+.env
+*.log
+*.sql
+*.zip
+*.rar
+*.bak
+.idea/
+.vscode/
+.DS_Store
