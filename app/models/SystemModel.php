@@ -15,7 +15,7 @@ class SystemModel {
         $query = $this->db->query("SELECT 1");
 
         if ($query) {
-            return "connected";
+            return "conectado";
         }
 
         return "error";
