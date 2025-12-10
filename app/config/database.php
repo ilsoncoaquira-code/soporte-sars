@@ -1,26 +1,21 @@
 <?php
-class Database {
-    private $host = "localhost";
-    private $db_name = "soporte_sars";
-    private $username = "root";
-    private $password = "";
-    public $conn;
 
-    public function getConnection() {
-        $this->conn = null;
-        try {
-            $this->conn = new PDO(
-                "mysql:host=" . $this->host . ";dbname=" . $this->db_name,
-                $this->username,
-                $this->password
-            );
-            $this->conn->exec("set names utf8");
-        } catch (PDOException $exception) {
-            echo "Error de conexión: " . $exception->getMessage();
+class Database {
+
+    public function connect() {
+        $host = "localhost";
+        $user = "root";
+        $password = "root";
+        $database = "sars_db";
+
+        $connection = new mysqli($host, $user, $password, $database);
+
+        if ($connection->connect_error) {
+            die("Error de conexión: " . $connection->connect_error);
         }
-        return $this->conn;
+
+        return $connection;
     }
 }
+
 ?>
-
-

@@ -1,6 +1,11 @@
 <?php
-require_once __DIR__ . '/../app/controllers/ReservaController.php';
 
-$controller = new ReservaController();
-$controller->listar();
+require_once "../app/controllers/SystemController.php";
+
+// Crear el controlador
+$controller = new SystemController();
+
+// Llamar al método principal (acción)
+$controller->index();
+
 ?>
