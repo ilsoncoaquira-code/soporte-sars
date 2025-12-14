@@ -1,11 +1,3 @@
-# Archivos y carpetas que no deben subirse al repositorio
-vendor/
+/vendor
+/node_modules
 .env
-*.log
-*.sql
-*.zip
-*.rar
-*.bak
-.idea/
-.vscode/
-.DS_Store

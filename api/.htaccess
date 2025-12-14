@@ -1,0 +1,12 @@
+# .htaccess
+RewriteEngine On
+
+# Redirigir a index.php
+RewriteRule ^$ index.php [L]
+
+# Permitir acceso a archivos reales
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# API Routing
+RewriteRule ^api/(.*)$ api/$1.php [L,QSA]
