@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sistema Soporte SARS - MVP
 
 Sistema Integral de Reservas, Ventas y Soporte Técnico desarrollado con arquitectura MVC en PHP.
@@ -26,3 +27,9 @@ Sistema Integral de Reservas, Ventas y Soporte Técnico desarrollado con arquite
 ```bash
 git clone [url-del-repositorio]
 cd soporte_sars_mvc
+=======
+# Nombre del Proyecto
+Proyecto del curso Ingeniería de Software I.
+
+Este repositorio contiene la configuración inicial del entorno colaborativo del equipo.
+>>>>>>> cec8e1e0cd5f391e93b07d76e84309d158d293a2
